@@ -7,6 +7,7 @@ export const Link = styled.a`
   border-bottom: 1px solid transparent;
 
   text-decoration: none;
+  text-transform: uppercase;
 
   font-weight: bold;
   font-size: 0.75rem;
@@ -17,7 +18,7 @@ export const Link = styled.a`
 
   &:hover {
     border-bottom: 1px solid ${({ theme }) => theme.blue};
-    
+
     transition: border-color 0.2s;
   }
 `

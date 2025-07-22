@@ -1,14 +1,14 @@
 import { PostContainer } from './styles'
 
 interface PostProps {
-  number: number
+  id: number
   title: string
   created_at: string
   body: string
 }
 
-export function Post({ number, title, created_at, body }: PostProps) {
-  const to = `/post-details/${number}`
+export function Post({ id, title, created_at, body }: PostProps) {
+  const to = `/post-details/${id}`
 
   return (
     <PostContainer to={to}>
