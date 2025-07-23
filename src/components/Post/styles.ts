@@ -43,7 +43,8 @@ export const PostContainer = styled(Link)`
     }
   }
 
-  span {
+  > span {
+
     color: ${({ theme }) => theme['base-text']};
     overflow: hidden;
 
@@ -52,5 +53,9 @@ export const PostContainer = styled(Link)`
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
+
+    & > * {
+      max-width: 20rem;
+    }
   }
 `

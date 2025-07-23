@@ -88,7 +88,15 @@ export const Content = styled.div`
   flex-direction: column;
   gap: 1.5rem;
 
+  * {
+    max-width: 50rem;
+  }
+
   p {
     color: ${({ theme }) => theme['base-text']};
+  }
+
+  a {
+    color: ${({ theme }) => theme.blue};
   }
 `
